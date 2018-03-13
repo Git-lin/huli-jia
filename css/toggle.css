@@ -1,0 +1,309 @@
+@charset "utf-8";
+#main{
+    width:1190px;
+    padding:10px 0 0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:100px;
+}
+/*商品展示及购买信息*/
+.goodsBuyInfo{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+/*商品图*/
+.goodsBuyInfo .goodsShowImg{
+    width:595px;
+    height:auto;
+    overflow: hidden;
+    float: left;
+}
+/*主图*/
+.goodsShowImg .mainImg{
+    width:595px;
+    height:437px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    white-space:normal;
+    overflow: hidden;
+    position: relative;
+}
+.goodsShowImg .mainImg ul{
+    white-space:normal;
+}
+
+.goodsShowImg .mainImg li{
+    display: none;
+}
+/*添加class显示图片*/
+.goodsShowImg .mainImg li.show{
+    display: block;
+}
+.goodsShowImg .mainImg img{
+    width:100%;
+    height:437px;
+}
+/*缩略图*/
+.goodsShowImg .thumbnail{
+    margin-top:20px;
+}
+.goodsShowImg .thumbnail ul{
+    width:600px;
+    height:112px;
+    white-space:nowrap;
+    overflow: hidden;
+    list-style: none;
+}
+.goodsShowImg .thumbnail ul li{
+    width:107px;
+    height:112px;
+    border:3px solid transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-left:5px;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+    display: block;
+}
+/*li点击时给加class加边框*/
+.goodsShowImg .thumbnail ul li.selected{
+    border:3px solid #82c353;
+}
+
+
+/*购买信息*/
+.goodsShowImg .goodsBuy{
+    width:auto;
+    height:auto;
+    margin-left:675px;
+}
+.goodsBuy .goodsName h1{
+    font-size:40px;
+    font-weight:bold;
+}
+.goodsBuy .goodsName p{
+    margin-top:16px;
+}
+.goodsBuy .goodsName P span{
+    padding: 0 20px;
+    border-left:1px solid #333;
+    font-size:18px;
+    display: inline-block;
+}
+.goodsBuy .goodsPrice{
+    margin-top:60px;
+}
+.goodsBuy .goodsPrice>div{
+    position: relative;
+    display: inline-block;
+
+}
+.goodsBuy .goodsPrice span{
+    font-weight:bold;
+    display: inline-block;
+}
+.goodsBuy .goodsPrice span.rmbSign{
+    font-size:18px;
+    vertical-align: top;
+}
+.goodsBuy .goodsPrice span.rmbNum{
+    font-family:Arial;
+    line-height:58px;
+    font-size:72px;
+    vertical-align: middle;
+}
+.goodsBuy .goodsPrice span{
+    font-weight:bold;
+    display: inline-block;
+}
+.goodsBuy .goodsPrice span .rmbYuan{
+    font-size:20px;
+    vertical-align: bottom;
+}
+.goodsBuy .goodsPrice .origPrice .deleOldPrice{
+    width:110%;
+    height:1px;
+    border-bottom:2px solid red;
+    position: absolute;
+    top:31px;
+    left:-5%;
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    -o-transform: rotate(12deg);
+    transform: rotate(12deg);
+}
+.goodsBuy .goodsPrice .newPrice{
+    margin-left:20px;
+}
+.goodsBuy .goodsPrice .newPrice .rmbNum{
+    color: red;
+}
+/*购买信息*/
+.goodsBuyInfo .goodsBuy{
+    width:auto;
+    height:auto;
+    margin-left:675px;
+}
+.goodsBuy .goodsDynamic{
+    line-height:180%;
+    font-size:18px;
+    margin-top:19px;
+}
+.goodsBuy .goodsDynamic .score a{
+    color: #666;
+    margin-left:42px;
+    text-decoration: underline;
+}
+.goodsBuy .goodsDynamic .score a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*商品购买操作*/
+.goodsBuy .goodsBuyCtrl{
+    margin-top:19px;
+
+}
+.goodsBuy .goodsBuyCtrl .countSet{
+    width:90px;
+    height:48px;
+    border:1px solid #aaa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+}
+.goodsBuy .goodsBuyCtrl .countSet input[type="text"]{
+    width:60px;
+    height:48px;
+    background-color: transparent;
+    padding:0;
+    border:none;
+    font-size:20px;
+    text-align: center;
+    float: left;
+    display: block;
+
+}
+.goodsBuy .goodsBuyCtrl .countSet .countSetArea{
+    width:30px;
+    height:48px;
+    margin-left:60px;
+}
+.goodsBuy .goodsBuyCtrl .plus,.goodsBuy .goodsBuyCtrl .minus{
+    width:100%;
+    height:24px;
+    background-color:#e3e3e3;
+    border-left:1px solid #9a9b9c;
+    line-height:24px;
+    font-size:24px;
+    color: #666;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+.goodsBuy .goodsBuyCtrl .minus{
+    font-size:32px;
+    border-top:1px solid #9a9b9c;
+}
+.goodsBuy .goodsBuyCtrl .plus.disabled,goodsBuy .goodsBuyCtrl .minus.disabled {
+    background-color: #c5c3c4;
+    cursor: not-allowed;
+}
+.goodsBuy .goodsBuyCtrl .immedBuy{
+    background-color:red;
+    color: #fff;
+}
+.goodsBuy .goodsBuyCtrl .immedBuy,.goodsBuy .goodsBuyCtrl .shoppingCar{
+    width:196px;
+    height:48px;
+    line-height:46px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size:24px;
+    margin-left:10px;
+    border:none;
+    display: inline-block;
+    position: relative;
+    top:-17px;
+    cursor: pointer;
+}
+.goodsBuy .goodsBuyCtrl .shoppingCar{
+    background-color:#fff;
+    border:1px solid #aaa;
+    color: #999;
+}
+/*在线客服*/
+.goodsBuy .onlineServer{
+    margin-top:60px;
+}
+.goodsBuy .onlineServer button{
+    width:157px;
+    height:48px;
+    background: url(../images/sprites_0.png) no-repeat ;
+    background-position: -277px -353px;
+    border:none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+/*户里服务*/
+.goodsBuy .huliServer p{
+    width:96%;
+    height:auto;
+    line-height:26px;
+    padding:10px 10px;
+    background-color:#666;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size:18px;
+    color: #f3f3f3;
+    margin-top:12px;
+}
+/*商品规格*/
+.goodsStyle,.goodsDetails,.goodsDeliver,.goodsRecom{
+    margin-top:20px;
+}
+.classifyHeader{
+    width:100%;
+    height:56px;
+    line-height: 56px;
+    border-bottom:1px solid #ccc;
+    font-size:24px;
+    margin-bottom:24px;
+    text-align: left;
+
+}
+/*商品详情*/
+.goodsStyle>div{
+    width:33.33%;
+    line-height:30px;
+    font-size:18px;
+    float: left;
+
+}
+.goodsDetails .detailsContent{
+    width:100%;
+    height:300px;
+    background: #efefef;
+}
+.goodsDeliver >div{
+    font-size:18px;
+
+}
+.goodsRecom .recomList a{
+    width:364px;
+    margin-left:40px;
+    border:3px solid transparent;
+    text-decoration: none;
+    float: left;
+
+}

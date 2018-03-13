@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*main部分*/
+.dpi-1240{
+    width: 1240px;
+    margin: 0 auto;
+}
+.home_h1{
+    width: 431px;
+    height: 35px;
+    background-position: 0 0;
+    margin: 34px auto 50px;
+}
+#main img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bfbfbe;
+    box-sizing: border-box;
+}
+/*第一行图片列表样式*/
+/*轮播图样式*/
+.imgfirstLeft{
+    position: relative;
+    width: 814px;
+    height: 388px;
+    display: inline-block;
+}
+.imgListPlay{
+    position: relative;
+    width: 814px;
+    height: 388px;
+    display: inline-block;
+    overflow: hidden;
+}
+.imgListPlay img{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all 2s;
+}
+.imglistFirst img.show{
+    opacity: 1;
+    animation: imgScale 6s linear;
+}
+.slideList-point{
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+}
+.slideList-point>i{
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    float: left;
+    display: block;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    margin-right: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.slideList-point>i.ckd{
+    background-color: #ffffff;
+}
+/* 设置图片放大原点 */
+.imgListPlay img.enlarge-1 {
+    transform-origin: 10% 10%;
+}
+.imgListPlay img.enlarge-2 {
+    transform-origin: 90% 10%;
+}
+.imgListPlay img.enlarge-3 {
+    transform-origin: 90% 90%;
+}
+.imgListPlay img.enlarge-4 {
+    transform-origin: 10% 90%;
+}
+/*定义动画帧*/
+@keyframes imgScale {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2) }
+}
+
+.imgfirstRight{
+    width: 388px;
+    height: 388px;
+    display: inline-block;
+}
+.ml-38{
+    margin-left: 38px;
+}
+.mt-38{
+    margin-top: 38px;
+}
+/*第二行图片列表样式*/
+.imglistTwoLeft{
+    width: 388px;
+    height: 818px;
+    display: inline-block;
+}
+.imglistTwoMiddle{
+    width: 388px;
+    height: 818px;
+    display: inline-block;
+}
+/*第三行图片列表样式*/
+.imglistThreeLeft{
+    width: 388px;
+    height: 388px;
+    display: inline-block;
+    /*overflow-x :scroll;*/
+    /*overflow-y :scroll;*/
+}
+.imglistThreeRight{
+    width: 814px;
+    height: 388px;
+}

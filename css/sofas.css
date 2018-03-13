@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+/*沙发，，，单页面样式*/
+.content{
+    margin-bottom:100px;
+}
+.classify_banner{
+    overflow: hidden;
+    width:1190px;
+    height:245px;
+    background:url(../images/classifyBanner_1190dpi.jpg)no-repeat 100% 100%;
+    mrgin-top:30px;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+.classify_banner h1{
+    position: absolute;
+    width:100%;
+    text-shadow: 0px 1px 3px rgba(0,0,0,.3);
+    font-weight:bold;
+    font-size:40px;
+    color: #fff;
+    left:0;
+    top:50%;
+    margin-top:-30px;
+    text-align: center;
+}
+.subnav{
+    position: absolute;
+    width:100%;
+    height:40px;
+    padding:0 6%;
+    bottom:12px;
+    text-align: center;
+    margin:0 auto;
+}
+.subnav li{
+    overflow: hidden;
+    float: left;
+    margin:0;
+    width:174.5px;
+    text-align: center;
+}
+.subnav li a{
+    display: inline-block;
+    width:108px;
+    height:40px;
+    background-color:#838280;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    line-height:40px;
+    font-size:20px;
+    color: #fff;
+}
+.subnav li a:hover{
+    animation: background-color 0.8s;
+    background:#77b74b;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,.3);
+    box-shadow: 0px 1px 3px rgba(0,0,0,.3);
+}
+@keyframes background-color {
+    0%{ background-color:#838280;}
+    100%{ background:#77b74b;}
+}
+.classifyFilter{
+    width:1190px;
+    height:64px;
+    border-bottom:1px solid #ccc;
+    margin-top:50px;
+    position: absolute;
+    left:50%;
+    margin-left:-595px;
+    z-index:10;
+    margin-right:auto;
+}
+.classifyFilter>div {
+    width: 117px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    padding: 0 14px;
+    margin-right: 12px;
+    cursor: pointer;
+    float: left;
+
+}
+.classifyFilter>div:hover{
+    border:1px solid #ccc;
+}
+.classifyFilter .filter{
+    width:100%;
+    height:59px;
+    line-height:62px;
+    text-align: center;
+    font-size:20px;
+    display: block;
+    cursor: pointer;
+    color: #000;
+}
+.classifyFilter .active {
+    color: #d8170e;
+
+}
+.classifyFilter>div ul{
+    display: none;
+    border-top:1px solid transparent;
+    padidng:10px 0;
+    -webkit-transition: border 0.6s;
+    -moz-transition: border 0.6s;
+    -ms-transition: border 0.6s;
+    -o-transition: border 0.6s;
+    transition: border 0.6s;
+}
+.classifyFilter>div li{
+    text-align: center;
+    line-height:46px;
+    font-size:18px;
+}
+.classifyFilter>div li:hover{
+    color: #d8170e;
+}
+.goodsChoose {
+    width: 1190px;
+    height: auto;
+    margin-top: 138px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.goodsChoose>a{
+    display: inline-block;
+    width:366px;
+    margin-right:46px;
+    margin-bottom:26px;
+    border:3px solid transparent;
+    color: #000;
+    overflow: hidden;
+    transition:border-color,background-color 0.6s,0.6s;
+    float: left;
+    box-sizing: border-box;
+}
+.goodsChoose .goodsImg{
+    width:366px;
+    height:366px;
+    background-color:#acacac;
+    overflow: hidden;
+
+}
+.goodsChoose .goodsBaseInfo{
+    height:64px;
+    line-height:64px;
+    white-space: nowrap;
+    text-align: center;
+}
+.goodsChoose .goodsImg img{
+    width:100%;
+    height:auto;
+}
+.goodsChoose .goodsBaseInfo .goodsName{
+    font-size:18px;
+    text-align: center;
+    display: inline-block;
+}
+.goodsChoose .goodsBaseInfo .goodsPrice{
+    font-size:22px;
+    font-weight:bold;
+    margin-left:16px;
+    text-align: center;
+    display: inline-block;
+}
+.goodsChoose .goodsBaseInfo .goodsPrice .oldPrice{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.goodsBaseInfo .goodsPrice .deleOldPrice{
+    width:110%;
+    height:1px;
+    border-bottom:2px solid #eb1212;
+    position: absolute;
+    top:31px;
+    left:-5%;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+    display: none;
+}
+.goodsChoose .goodsBaseInfo .goodsPrice .newPrice{
+    margin-left:16px;
+    color: #d8170e;
+}
+.goodsChoose>a:hover{
+    background-color:#ecf2e9;
+    border:3px solid #82c353;
+}
+
+
+/*登录，注册样式*/
+.mt-100{
+    margin-top:100px;
+}
+h1{
+    width:100%;
+    text-align: center;
+    font:normal 32px/35px "微软雅黑";
+    color:#333;
+}
+.subhead{
+    text-align: center;
+    font:normal 18px/24px "微软雅黑";
+    color:#888;
+}
+.mt-10 {
+    margin-top: 10px;
+
+}
+.loginBox {
+    width: 402px;
+    height: auto;
+    margin-bottom: 180px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.loginBox label{
+    line-height:200%;
+    font-size:18px;
+    display: block;
+}
+.mt-50{
+    margin-top:50px;
+}
+.loginBox input{
+    background-color:#fff;
+    border:1px solid #cccbca;
+    outline:none;
+    padding:0 10px;
+    font-size:15px;
+    color: #666;
+    -webkit-transition: box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s;
+    -ms-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+.loginBox .baseStyle {
+    width: 400px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #555;
+
+}
+.loginBox p{
+    text-align: right;
+    margin-top:15px;
+}
+.loginBox p a{
+    text-decoration: underline;
+    font-size:18px;
+    color: #333;
+}
+.loginBtn,.regBtn{
+    display: block;
+    width:400px;
+    height:64px;
+    background-color:#838281;
+    border:none;
+    text-align: center;
+    font:normal 32px/64px "微软雅黑";
+    color:#fff;
+   /* cursor: not-allowed;*/
+    cursor: pointer;
+    margin-top:40px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus
+{
+    border:1px solid #82c353;
+    box-shadow:0 0 10px rgba(130,195,83,.6);
+}
+.subhead a,.loginBox p a:hover{
+    color: #4375ad;
+    text-decoration: underline;
+}
+.subhead a:hover{
+    color: #679bd4;
+}
+.loginBox>form>div>div{
+    opacity: 0;
+    position: relative;
+    height:20px;
+}
+.loginBox>form>div .Verification i {
+    background: transparent;
+    color:#fff;
+}
+.loginBox>form>div>div>span:nth-child(1){
+    display: flex;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background: rgba(255,0,0,.5);
+    color: #fff;
+    justify-content: center;
+    margin:-1px 5px 0 0;
+    text-align: left;
+    position: absolute;
+    top:3px;
+}
+.loginBox>form>div>div>span:nth-child(2){
+    color: rgba(255,0,0,.5);
+    font-size:13px;
+    position: absolute;
+    top:1px;
+    left:16px;
+}
+.Verification-input {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #555;
+}
+.loginBox>form>div{
+    position: relative;
+}
+.loginBox>form>div .Verification{
+    width:120px;
+    position: absolute;
+    height:49px;
+    line-height:50px;
+    right:68px;
+    top:37px;
+    font-size:20px;
+    background-color:rgba(0,0,0,.2);
+    cursor: pointer;
+    text-align: center;
+    opacity:1;
+}
+/*弹出框遮罩层样式*/
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 99;
+    display: none;
+}
+.maskcontent{
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #77b74b;
+    background-color: white;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.maskcontent>p{
+    margin-top: 120px;
+    font-size:25px;
+}
+.maskcontent>button{
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    border: 0;
+    outline: none;
+    width: 190px;
+    height: 50px;
+    background-color: #77b74b;
+}
+.maskcontent>button:hover{
+    opacity: .7;
+}

@@ -1,0 +1,286 @@
+@charset "utf-8";
+/*购物车标题部分*/
+.shopping-car {
+    width: 1240px;
+    height: auto;
+    margin: 15px auto 0;
+}
+.shopping-car>h2{
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 160%;
+}
+/*购物车表格部分*/
+.sc-content{
+    width: 1156px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+/*购物车表格部分基本样式tr,th,td基本样式*/
+.sc-content table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+.sc-content table th.w-320, .sc-content table td.w-320 {
+    width: 320px;
+    text-indent: 30px;
+    text-align: left;
+}
+.sc-content table th{
+    font: normal 18px/50px "微软雅黑";
+}
+.sc-content tbody tr{
+    border-top: 1px solid #ccc;
+}
+.sc-content table td{
+    padding: 10px;
+    text-align: center;
+    color: #888;
+}
+/*购物车第一个单元格样式（复选框）*/
+.sc-content table .trea_ckd {
+    width: 80px;
+    text-align: center;
+}
+.sc-content i{
+    cursor: pointer;
+}
+/*全选，半选，不选基本样式图片*/
+.ckb_custom, .ckb-part_custom, .ckb-checked_custom {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    display: inline-block;
+}
+/*全选i的背景图片为全选图片*/
+.sc-content i.ckb-checked_custom{
+    background-position: -412px -100px;
+}
+/*半选时i的背景图片为半选图片*/
+.sc-content i.ckb-part_custom{
+    background-position: -412px -73px;
+}
+/*为不选时i的背景图片为不选图片*/
+.sc-content i.ckb_custom{
+    background-position: -412px -46px;
+}
+/*购物车第二个单元格样式（商品信息：图片加商品信息）*/
+.sc-content .tren_info{
+    width: 140px;
+    white-space: nowrap;
+    text-align: left;
+}
+.sc-content .tren_info > div {
+    vertical-align: middle;
+    display: inline-block;
+}
+.sc-content .tren_info img{
+    width: 78px;
+    height: 52px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+}
+.sc-content .img_info>p{
+    width: 100px;
+    padding: 10px 10px 0px;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sc-content .tren_info .disc_info>p{
+    font-size: 12px;
+    width: 140px;
+    line-height: 22px;
+    padding: 0;
+    text-align: left;
+}
+
+/*购物车第四个单元格样式（表格数量增加和减少输入框单元格）*/
+.sc-content .trea_count input[type='text'] {
+    width: 36px;
+    height: 26px;
+    text-align: center;
+}
+.sc-content .trea_count button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    color: #bbb;
+    display: inline-block;
+    cursor: not-allowed;
+    font-family:  Arial;
+}
+.sc-content .trea_count button.active {
+    color: #333;
+    cursor: pointer;
+}
+/*购物车第6个单元格（删除）*/
+.sc-content table td.del a{
+    color: #888;
+}
+.sc-content table td.del a:hover{
+    text-decoration: underline;
+    color: #d8170e;
+}
+/*结算栏部分*/
+.sc-payBar {
+    width: 1156px;
+    height: 54px;
+    line-height: 54px;
+    background-color: #dededd;
+    position: relative;
+    margin: 28px auto 0;
+}
+/*结算栏左边部分*/
+.sc-payBar-left .allCkd {
+    position: relative;
+    top: 2px;
+    margin-left: 33px;
+}
+.sc-payBar-left > div, .sc-payBar-left > div span {
+    display: inline-block;
+}
+.sc-payBar-left .trea_count_sum {
+    font-size: 20px;
+    color: #d8170e;
+    padding: 0 2px;
+}
+/*结算栏右边部分*/
+.sc-payBar-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sc-payBar-right > div, .sc-payBar-right > div > p {
+    display: inline-block;
+}
+.sc-payBar-right > div.mr-160 {
+    margin-right: 160px;
+}
+.sc-payBar-right > div > p.pos_-t2 {
+    position: relative;
+    top: -2px;
+}
+.sc-payBar-right > div span.plusFont {
+    font-size: 20px;
+}
+.sc-payBar-right > div span.monney {
+    font-size: 22px;
+    color: #d8170e;
+    margin-left: 8px;
+}
+.sc-payBar-right > div .gotoPay {
+    width: 138px;
+    height: 54px;
+    background-color: #da251d;
+    border: none;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sc-payBar-right > div .gotoPay:hover{
+    opacity: .7 ;
+}
+/*推荐商品部分*/
+.rcmdComod{
+    width: 1240px;
+    margin: 180px auto 0;
+}
+.rcmdComod>h2.rcmdgood{
+    text-indent: 32px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.gapLine_1 {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 16px;
+    display: block;
+}
+.rcmdComod-show {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 36px;
+}
+.rcmdComod-show > .comodshow.ml-0 {
+    margin-left: 0;
+}
+.rcmdComod-show > .comodshow {
+    float: left;
+    margin-left: 35px;
+    box-sizing: border-box;
+}
+.rcmdComod-show > .comodshow div {
+    width: 390px;
+    height: 390px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.rcmdComod-show > .comodshow p {
+    text-align: center;
+    margin-top: 10px;
+}
+.rcmdComod-show > .comodshow p span {
+    font-size: 17px;
+    display: inline-block;
+}
+.rcmdComod-show > .comodshow p span.price {
+    font-size: 22px;
+    margin-left: 36px;
+    position: relative;
+    top: 2px;
+}
+/*弹出框遮罩层样式*/
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 99;
+    display: none;
+}
+.maskcontent{
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #77b74b;
+    background-color: white;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.maskcontent>p{
+    margin-top: 120px;
+}
+.maskcontent>button{
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    border: 0;
+    outline: none;
+    width: 70px;
+    height: 50px;
+    background-color: #77b74b;
+}
+.maskcontent>button:hover{
+    opacity: .7;
+}

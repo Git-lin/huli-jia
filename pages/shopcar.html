@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/shopcar.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <!--<link rel="stylesheet" href="../css/footer.css">-->
+    <link rel="stylesheet" href="../css/sofas.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <title>购物车页面</title>
+</head>
+<body>
+<header class="header"></header>
+<main id="main">
+    <!--购物车部分-->
+    <div class="shopping-car">
+        <h2>我的购物车</h2>
+        <div class="sc-content">
+            <table>
+                <thead>
+                <tr>
+                    <th class="trea_ckd">
+                        <!--<input type="checkbox">-->
+                        <i class="sprit ckb-checked_custom allCkd"></i>
+                    </th>
+                    <th class="w-320">商品信息</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>金额</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="trea_ckd">
+                        <!--<input type="checkbox">-->
+                        <i class="sprit ckb-checked_custom i_trea"></i>
+                    </td>
+                    <td class="tren_info">
+                        <div class="img_info">
+                            <img src="../images/example_0.jpg">
+                            <p>家具名称</p>
+                        </div>
+                        <div class="disc_info">
+                            <p>产品尺寸</p>
+                            <p>产品材质</p>
+                            <p>产品颜色</p>
+                        </div>
+                    </td>
+                    <td class="unitprice">￥<span>698</span></td>
+                    <td class="trea_count">
+                        <button class="active">-</button>
+                        <input type="text" value="3">
+                        <button class="active">+</button>
+                    </td>
+                    <td class="Allunitprice">￥<span>2094</span></td>
+                    <td class="del"><a href="javascript:void(0)">删除</a></td>
+                </tr>
+                <tr>
+                    <td class="trea_ckd">
+                        <!--<input type="checkbox">-->
+                        <i class="sprit ckb-checked_custom i_trea"></i>
+                    </td>
+                    <td class="tren_info">
+                        <div class="img_info">
+                            <img src="../images/example_5.jpg">
+                            <p>家具名称</p>
+                        </div>
+                        <div class="disc_info">
+                            <p>产品尺寸</p>
+                            <p>产品材质</p>
+                            <p>产品颜色</p>
+                        </div>
+                    </td>
+                    <td class="unitprice">￥<span>668</span></td>
+                    <td class="trea_count">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button class="active">+</button>
+                    </td>
+                    <td class="Allunitprice">￥<span>668</span></td>
+                    <td class="del"><a href="javascript:void(0)">删除</a></td>
+                </tr>
+                <tr>
+                    <td class="trea_ckd">
+                        <!--<input type="checkbox">-->
+                        <i class="sprit ckb-checked_custom i_trea"></i>
+                    </td>
+                    <td class="tren_info">
+                        <div class="img_info">
+                            <img src="../images/example_4.jpg">
+                            <p>家具名称</p>
+                        </div>
+                        <div class="disc_info">
+                            <p>产品尺寸</p>
+                            <p>产品材质</p>
+                            <p>产品颜色</p>
+                        </div>
+                    </td>
+                    <td class="unitprice">￥<span>668</span></td>
+                    <td class="trea_count">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button class="active">+</button>
+                    </td>
+                    <td class="Allunitprice">￥<span>668</span></td>
+                    <td class="del"><a href="javascript:void(0)">删除</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <!--结算栏部分-->
+            <div class="sc-payBar">
+                <!--左侧-->
+                <div class="sc-payBar-left">
+                    <div>
+                        <!--<input type="checkbox">-->
+                        <i class="sprit ckb-checked_custom allCkd" style="background-color: #fff;"></i>
+                        <span>全选</span>
+                    </div>
+                    <div><p>已选商品<span class="trea_count_sum">3</span>件</p></div>
+                </div>
+                <!--右侧-->
+                <div class="sc-payBar-right">
+                    <div class="mr-160">
+                        <p><span class="plusFont">合计</span>（不含运费）：<span class="monney">￥<span>3430</span></span></p>
+                    </div>
+                    <div>
+                        <button class="gotoPay">结算</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--推荐商品部分-->
+    <div class="rcmdComod">
+        <h2 class="rcmdgood">推荐商品</h2>
+        <div class="gapLine_1"></div>
+        <!--推荐商品图片列表-->
+        <div class="rcmdComod-show clearfloat">
+            <div class="comodshow ml-0">
+                <div><img src="../images/example_3.jpg" alt="加载中" style="width: 100%; height: auto; position: relative; top: -277.5px; margin-top: 194px;"></div>
+                <p><span>商品名称</span><span class="price">￥680</span></p>
+            </div>
+            <div class="comodshow">
+                <div><img src="../images/example_4.jpg" alt="加载中" style="width: 100%; height: 100%;"></div>
+                <p><span>商品名称</span><span class="price">￥680</span></p>
+            </div>
+            <div class="comodshow">
+                <div><img src="../images/example_5.jpg" alt="加载中" style="width: auto; height: 100%; position: relative; left: -266.5px; margin-left: 194px;"></div>
+                <p><span>商品名称</span><span class="price">￥680</span></p>
+            </div>
+        </div>
+    </div>
+</main>
+<!--结算时弹出遮罩层-->
+<div class="mask">
+    <div class="maskcontent">
+        <p>确认结算？记得填写收货地址！</p>
+        <button>确认</button>
+    </div>
+</div>
+<footer class="footer"></footer>
+</body>
+<script src="../plugin/jquery-3.2.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/shopcar.js"></script>
+
+</html>

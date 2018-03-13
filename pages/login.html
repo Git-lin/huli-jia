@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <!--<link rel="stylesheet" href="../css/footer.css">-->
+    <link rel="stylesheet" href="../css/sofas.css">
+</head>
+<body>
+<header class="header"></header>
+<main id="main">
+
+    <h1 class="mt-100">登&nbsp;&nbsp;&nbsp;录</h1>
+    <p class="subhead mt-10">
+        还不是我们的会员？<a href="#" class="register">注&nbsp;册</a>
+    </p>
+    <!--登录框-->
+    <div class="loginBox">
+        <form action="form" name="register-form">
+            <div>
+                <label for="" class="mt-50">账号</label>
+                <input type="text" value placeholder="用户注册邮箱号" class="userName baseStyle">
+                <div class="Prompt-accounts error">
+                    <span>!</span>
+                    <span>请输入正确的邮箱帐号</span>
+                </div>
+            </div>
+            <div>
+                <label for="" class="mt-24">密码</label>
+                <input type="password" value placeholder class="userPwd baseStyle">
+                <div class="Prompt-pwd error">
+                    <span>!</span>
+                    <span>以字母开头，长度在6~18之间，只能包含字符、数字和下划线</span>
+                </div>
+            </div>
+            <p><a href="#">忘记密码？</a></p>
+            <botton type="botton" class="loginBtn Btn">登录</botton>
+        </form>
+    </div>
+</main>
+<!--结算时弹出遮罩层-->
+<div class="mask">
+    <div class="maskcontent">
+        <p>登录成功！！</p>
+        <button>确认</button>
+    </div>
+</div>
+<footer class="footer"></footer>
+
+<!--js-->
+<script src="../plugin/jquery-3.2.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>
+

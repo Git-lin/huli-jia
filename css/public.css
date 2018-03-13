@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/*初始化样式*/
+html, body {
+    font-family: "微软雅黑";
+    color: #333;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+    min-width: 1260px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, input, p, th, td {
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*公共的样式*/
+.dpi-1240{
+    width: 1240px;
+    margin: 0 auto;
+}
+/*绝对定位*/
+.posAbsolute{
+    position: absolute;
+}
+/*浮动与清除浮动*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfloat{
+    zoom:1 /*兼容IE*/
+}
+.clearfloat:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/*公共雪碧图*/
+.sprit{
+    background: url(../images/sprites_0.png) no-repeat;
+}
+/*需要变成块级的元素*/
+.header_bg img, .contUS_mark, .logo a, .main_nav ul, .main_nav ul li div a, .select_custom i {
+    display: block;
+}
+/*需要变成行内块的元素*/
+.login, .shopping, .main_nav ul li a, .select_custom {
+    display: inline-block;
+}
+/*表单输入框统一样式*/
+input[type="text"], input[type="password"] {
+    background-color: #fff;
+    border: 1px solid #cccbca;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #666;
+    transition: box-shadow .3s;
+}

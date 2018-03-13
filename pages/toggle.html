@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <!--<link rel="stylesheet" href="../css/footer.css">-->
+    <link rel="stylesheet" href="../css/toggle.css">
+    <link rel="stylesheet" href="../css/sofas.css">
+</head>
+<body>
+<header class="header"></header>
+<main id="main">
+<!--商品展示及购买信息-->
+    <div class="goodsBuyInfo">
+        <!--商品图展示-->
+        <div class="goodsShowImg">
+            <!--主展示图-->
+            <div class="mainImg">
+                <ul>
+                    <!--动态加载-->
+                </ul>
+            </div>
+            <!--缩略图-->
+            <div class="thumbnail">
+                <ul>
+                    <!--动态加载-->
+                </ul>
+            </div>
+        </div>
+        <!--购买信息-->
+        <div class="goodsBuy">
+            <!--商品名称及筛选-->
+            <div class="goodsName">
+                <h1>沙发</h1>
+                <p>
+                    <span>三人位</span>
+                    <span>9成新以上</span>
+                </p>
+            </div>
+            <!--商品价格-->
+            <div class="goodsPrice">
+                <!--原始价格-->
+                <div class="origPrice">
+                    <span class="rmbSign">￥</span>
+                    <span class="rmbNum">680</span>
+                    <span class="rmbYuan">元</span>
+                    <!--价格删除线-->
+                    <span class="deleOldPrice"></span>
+                </div>
+                <!--新价格-->
+                <div class="newPrice">
+                    <span class="rmbSign">￥</span>
+                    <span class="rmbNum">580</span>
+                    <span class="rmbYuan">元</span>
+                </div>
+            </div>
+            <!--购买动态信息-->
+            <div class="goodsDynamic">
+                <div class="origBuyPrice">
+                    <label for="">原始购买价格：</label>
+                    <span class="rmbNum">2558</span>
+                    <span>元</span>
+                </div>
+                <div class="score">
+                    <label for="">积分：</label>
+                    <span>6.8</span>
+                    <a href="">了解积分规则</a>
+                </div>
+                <div class="inventory">
+                    <label for="">库存数量：</label>
+                    <span>5</span>
+                </div>
+            </div>
+            <!--商品购买操作-->
+            <div class="goodsBuyCtrl">
+                <div class="countSet">
+                    <input type="text" value="0">
+                    <div class="countSetArea">
+                        <a href="" class="plus">+</a>
+                        <a href="" class="minus" disabled>-</a>
+                    </div>
+                </div>
+                <button type="button" class="immedBuy">立即购买</button>
+                <button type="button" class="shoppingCar">加入购物车</button>
+            </div>
+            <!--在线客服-->
+            <div class="onlineServer">
+                <button type="button"></button>
+            </div>
+            <!--户里服务-->
+            <div class="huliServer">
+                <p>
+                    <label for="">户里服务：</label>
+                    <span>该商品在仓库，23点之前完成下单可在后天（5月15日）送达/该商品在用户家中，
+                    23点前完成下单，可在（5）天后送达。</span>
+                </p>
+            </div>
+        </div>
+    </div>
+<!--商品规格-->
+    <div class="goodsStyle clearfloat">
+        <h1 class="classifyHeader">商品规格</h1>
+        <div class="goodsSize">
+            <label for="">尺寸：</label>
+            <span>1260*760*560</span>
+        </div>
+        <div class="goodsTexture">
+            <label for="">材质：</label>
+            <span>实木/布艺</span>
+        </div>
+        <div class="goodsColor">
+            <label for="">颜色：</label>
+            <span>亚麻色</span>
+        </div>
+    </div>
+<!--商品详情-->
+    <div class="goodsDetails">
+        <h1 class="classifyHeader">商品详情</h1>
+        <div class="detailsContent"></div>
+    </div>
+<!--送货-->
+    <div class="goodsDeliver">
+        <h1 class="classifyHeader">送货</h1>
+        <div class="deliverAddr">成都市绕城内满699元可享受免费送货政策，未满金额或者绕城外地
+        区收取99元运费。</div>
+    </div>
+<!--推荐商品-->
+    <div class="goodsRecom">
+        <h1 class="classifyHeader">商品推荐</h1>
+        <div class="recomList">
+            <!--动态生成商品列表-->
+        </div>
+    </div>
+</main>
+<footer class="footer"></footer>
+<!--js-->
+<script src="../plugin/jquery-3.2.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/toggle.js"></script>
+</body>
+</html>
